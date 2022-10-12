@@ -10,7 +10,9 @@ const { NotImplementedError } = require('../extensions/index.js');
  * domains = [
  *  'code.yandex.ru',
  *  'music.yandex.ru',
- *  'yandex.ru'
+ *  'yandex.ru',
+ *  'tut.by',
+ *  'afisha.tut.by'
  * ]
  *
  * The result should be the following:
@@ -19,6 +21,9 @@ const { NotImplementedError } = require('../extensions/index.js');
  *   '.ru.yandex': 3,
  *   '.ru.yandex.code': 1,
  *   '.ru.yandex.music': 1,
+ *   '.by': 2,
+ *   '.tut.by': 2,
+ *   '.afisha.tut.by': 1
  * }
  *
  */
@@ -30,3 +35,16 @@ function getDNSStats(/* domains */) {
 module.exports = {
   getDNSStats
 };
+
+
+
+// function getDNSStats(domains) {
+//   const obj = Object.assign({}, domains);
+//   console.log(obj)
+    
+//   }
+//   getDNSStats([
+//      'code.yandex.ru',
+//      'music.yandex.ru',
+//      'yandex.ru'
+//     ]);

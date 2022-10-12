@@ -18,3 +18,10 @@ function getEmailDomain(/* email */) {
 module.exports = {
   getEmailDomain
 };
+
+
+// function getEmailDomain(email) {
+//   return email.substr(email.indexOf("@") + 1, email.length) ;
+// }
+
+// console.log(getEmailDomain('prettyahbjhbkjkbkndsimple@exankknkmple.com'))

@@ -19,3 +19,16 @@ function sortByHeight(/* arr */) {
 module.exports = {
   sortByHeight
 };
+
+// function sortByHeight(arr) {
+//   for (let i = 0; i < arr.lenght; i++) {
+//     if (arr[i] === '-1') {
+//       return '-1';
+//     } else {
+//       return arr.sort(); 
+//     }
+//   }  
+// }
+
+// console.log(sortByHeight([-1, 150, 190, 170, -1, -1, 160, 180]));
+
