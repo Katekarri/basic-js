@@ -23,3 +23,16 @@ function repeater(/* str, options */) {
 module.exports = {
   repeater
 };
+
+
+// let obj = {repeatTimes: 3,
+//   separator: '**'}
+// let nuwStr = '';
+// for (let elem in obj) {
+// if (obj.hasOwnProperty(elem)) {
+//  nuwStr += elem + obj[elem];
+// }
+// } 
+
+
+// console.log(nuwStr)

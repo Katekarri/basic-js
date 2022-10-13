@@ -28,6 +28,27 @@ function minesweeper(/* matrix */) {
   // remove line with error and write your code here
 }
 
+
+
+// const matrix = [[true, false, false],
+// [false, true, false],
+// [false, false, false]]
+
+// function minesweeper(matrix) {
+//   let newArr = [];
+//   for (let i = 0; i < matrix.length; i++) {
+//     for (let j = 0; j < matrix[i].length; j++) {
+//       if(matrix[i][j] === true) {
+//         newArr.push([i, j])
+//       }
+//     }
+//     return newArr;
+//   }  
+// }
+
+
+// minesweeper(matrix);
+
 module.exports = {
   minesweeper
 };
