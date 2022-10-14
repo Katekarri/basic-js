@@ -39,22 +39,22 @@ const { NotImplementedError } = require('../extensions/index.js');
 
 
 function renameFiles(names) {  
-  var c = {}, t = (x, n) => x + "(" + n + ")"; 
+  let obj = {}, t = (x, n) => x + "(" + n + ")"; 
   return names.map(function(x) {
-    var n = c[x] || 0;   
-    c[x] = n + 1;
+    let n = obj[x] || 0;   
+    obj[x] = n + 1;
     if(!n)
       return x;  
-    while(c[t(x, n)])
+    while(obj[t(x, n)])
       n++;  
-    c[t(x, n)] = 1;
+      obj[t(x, n)] = 1;
     return t(x, n);
   });
 
 };
 
-q = ["doc", "doc", "image", "doc(1)", "doc", "doc"];
-console.log(JSON.stringify(renameFiles(q)));
+arr = ["file", "file", "image", "file(1)", "file"];
+console.log(renameFiles(arr));
 
 module.exports = {
   renameFiles

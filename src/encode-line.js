@@ -11,9 +11,9 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
  function encodeLine(str) {
-  return str.replace(/([a-z])\1*/g, (it)=>(it.length>1?it.length + it[0]: it[0]));
+  return str.replace(/([a-z])\1*/g, (elem) => (elem.length > 1 ? elem.length + elem[0] : elem[0]));
 }
-console.log(encodeLine('aaaaaggj'))
+console.log(encodeLine('aabbbc'))
 
 module.exports = {
   encodeLine
