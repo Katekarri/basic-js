@@ -19,10 +19,24 @@ const { NotImplementedError } = require('../extensions/index.js');
 //   // remove line with error and write your code here
 // }
 
+// const av678 = /'[0-9]'/;
+
+// const av6098 = '[0-9]';
+
+// ^a-c [a].*[^c|d]
+//https://proglib.io/p/regex-for-beginners
+
+
+// ищем уникальный индентифик. матплаты устройства
+
 function isMAC48Address(n) {
-  return /^[0-9A-F]{2}(?:-[0-9A-F]{2}){5}$/.test(n);
+  return /^[0-9A-F]{2}(?:-[0-9A-F]{2}){5}$/.test(n);//тест - удовлетворяет ли строка регулярному выражению
 }
 
 module.exports = {
   isMAC48Address
 };
+
+
+// [1, 2].join('-');
+// '1-2-3'.split('-');

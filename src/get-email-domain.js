@@ -15,7 +15,7 @@ const { NotImplementedError } = require('../extensions/index.js');
   
 //   let result = [];
 //   email.forEach(mail => {
-//     let domain = mail.substr(mail.indexOf('@') + 1);
+//     let domain = mail.substr(mail.lastIndexOf('@') + 1);
 //     if (result.indexOf(domain) == -1)
 //     result.push(domain);
 //   });
@@ -26,13 +26,19 @@ const { NotImplementedError } = require('../extensions/index.js');
 // let email = ['prettyandsimple@example.com']
 // console.log(getEmailDomain(email))
 
-// module.exports = {
-//   getEmailDomain
-// };
 
+
+const  getEmailDomain = function(email) {
+  return email.substr(email.lastIndexOf("@") + 1, email.length) ;
+}
 
 // function getEmailDomain(email) {
-//   return email.substr(email.indexOf("@") + 1, email.length) ;
+//   // return email.substr(email.indexOf("@") + 1, email.length) ;
+//   return;
 // }
 
-// console.log(getEmailDomain('prettyahbjhbkjkbkndsimple@exankknkmple.com'))
+console.log(getEmailDomain('prettyahbjhbkjkbkndsimple@exankknkmple.com'))
+
+module.exports = {
+  getEmailDomain
+};
