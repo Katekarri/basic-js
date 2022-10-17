@@ -18,21 +18,20 @@ const { NotImplementedError } = require('../extensions/index.js');
 
 
 const encodeLine = function(str) {
-// function encodeLine(str) {
-  let count = 1;    
-  let result = '';
-  for(let i = 0; i < str.length; i++) {
-      if(str[i] == str[i+1]) {
-          count += 1;
-      } else {
-          result += count+str[i];
-          count = 1;
-      }
+  // function encodeLine(str) {
+    let count = 1;    
+    let result = '';
+    for(let i = 0; i < str.length; i++) {
+        if(str[i] == str[i+1]) {
+            count += 1;
+        } else {
+            result += count+str[i];
+            count = 1;
+        }
+    }
+    return result.replace(/1/g, '');
   }
-  return result;
-}
-console.log(encodeLine('aabbbc')) 
-
+  console.log(encodeLine('aabbbc')) 
 
 
 module.exports = {
