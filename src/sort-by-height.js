@@ -21,10 +21,10 @@ function sortByHeight(arr) {
     if(arr[i] === -1) {
         continue;
     } else {
-        for(let j = i; j < arr.length; j++){
+        for(let j = i; j < arr.length; j++) {
             if(arr[j] === -1) {
                 continue;
-            } else if(arr[j] < arr[i]){ 
+            } else if(arr[j] < arr[i]) { 
                 min = arr[j];
                 arr[j] = arr[i];
                 arr[i] = min;

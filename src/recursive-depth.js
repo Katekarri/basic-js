@@ -14,7 +14,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  */
 
 
-
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof
  class DepthCalculator {
    calculateDepth(arr) {
     return 1 + (arr instanceof Array ? arr.reduce(( max, item) => {

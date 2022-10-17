@@ -40,7 +40,7 @@ function minesweeper(matrix) {
     [i + 1, j + 1],
   ];
 
-  const newMatrix = matrix.map((r) => r.map((_) => 0));
+  const newMatrix = matrix.map((result) => result.map((_) => 0));
 
   for (let i = 0; i < matrix.length; i++) {
     for (let j = 0; j < matrix[i].length; j++) {
